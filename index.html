@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nebula Store</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Nebula Store</div>
+    <ul class="nav-links">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#kategori">Kategori</a></li>
+    </ul>
+  </nav>
+
+  <section class="slider relative">
+    <div class="slides">
+      <img src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Skincare Luxury">
+      <img src="https://davienaskincare.id/wp-content/uploads/2023/12/Glowing-Series-4.jpg" alt="Natural Ingredients">
+      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Skincare Routine">
+    </div>
+    <div class="absolute bottom-10 left-0 right-0 flex justify-center space-x-2">
+      <span class="w-3 h-3 bg-white rounded-full inline-block"></span>
+      <span class="w-3 h-3 bg-white rounded-full inline-block"></span>
+      <span class="w-3 h-3 bg-white rounded-full inline-block"></span>
+    </div>
+  </section>
+
+  <header class="hero">
+    <h1>Temukan Gaya Kamu 🌟</h1>
+    <p>Belanja produk fashion dan aksesoris terbaik dengan harga terjangkau!</p>
+  </header>
+
+  <section id="kategori" class="kategori-container">
+    <button class="kategori-btn" onclick="filterKategori('semua')">Semua</button>
+    <button class="kategori-btn" onclick="filterKategori('fashion')">Fashion</button>
+    <button class="kategori-btn" onclick="filterKategori('aksesoris')">Aksesoris</button>
+  </section>
+
+  <main>
+    <section class="product-list" id="produk-container"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nebula Store</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
